@@ -1,0 +1,26 @@
+.title {
+    background: red;
+    width: 750rpx;
+}
+
+.navigator-hover {
+    background: transparent;
+}
+
+.shop {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.item-left {
+    flex: 1;
+}
+
+.item-left image {
+    width: 100%;
+}
+
+.item-right {
+    flex: 4;
+    padding-left: 20rpx;
+}

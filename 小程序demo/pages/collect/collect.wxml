@@ -1,0 +1,7 @@
+<!-- pages/collect/collect.wxml -->
+<import src="../../template/shopList.wxml"></import>
+<view class="collect">
+    <view class="title">收藏列表</view>
+    <!-- 注意这个名字要一致 -->
+    <template is="shopList" data="{{subjects,baseUrl,from}}"></template>
+</view>

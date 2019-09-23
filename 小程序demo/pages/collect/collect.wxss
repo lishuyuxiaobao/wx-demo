@@ -1,0 +1,3 @@
+/* pages/collect/collect.wxss */
+
+@import "../../template/shopList.wxss"

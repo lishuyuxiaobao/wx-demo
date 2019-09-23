@@ -1,0 +1,12 @@
+<!-- pages/home/home.wxml -->
+<import src="../../template/shopList.wxml"></import>
+<view class="home">
+    <home-swiper swiper-data="{{swiperData}}"></home-swiper>
+    <view class="title">商铺列表</view>
+    <!-- 1.标签：<navigator url="/pages/home/home" open-type="switchTab">
+                跳转新页面
+                </navigator> 
+        2.点击  明确跳转  点哪个标签跳转 -->
+    <!-- 注意这个名字要一致 -->
+    <template is="shopList" data="{{subjects,baseUrl,from}}"></template>
+</view>

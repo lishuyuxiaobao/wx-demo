@@ -1,0 +1,16 @@
+/* pages/home/home.wxss */
+
+/* 尽力把空样式去掉
+标准设计图 iphone6 375px = 750rpx
+无论哪一个屏幕，都分为750个物理像素
+一份就是1rpx
+一半的话就是375rpx
+全屏就是750rpx
+*/
+
+.title {
+    background: red;
+    width: 750rpx;
+}
+
+@import "../../template/shopList.wxss"

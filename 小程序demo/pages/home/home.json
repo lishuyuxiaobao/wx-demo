@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "i-rate": "../../dist/rate/index",
+    "home-swiper": "/components/home-swiper/home-swiper"
+  },
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

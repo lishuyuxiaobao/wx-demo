@@ -1,0 +1,24 @@
+<template name="shopList">
+    <!-- 模板一般用于布局相似而且没有什么复杂的js逻辑情况 -->
+    <view class="subjects">
+        <view wx:for="{{subjects}}" wx:key="id" wx:for-item="shop">
+            <navigator url="{{'/pages/shopDetail/shopDetail?name='+shop.name+'&id='+shop.id}}" class="shop" open-type="navigate">
+                <view class="item-left" catchtap="collect" data-index="{{index}}" data-shop="{{shop}}" name="测试">
+                    <image lazy-load mode="widthFix" src="{{baseUrl + shop.image_path}}" />
+                </view>
+                <view class="item-right">
+                    <view>{{shop.name}}</view>
+                    <view hidden="{{from === '收藏'}}">
+                        <!-- <i-rate disabled="{{true}}" value="{{shop.rating}}">
+                            {{shop.rating}}星
+                        </i-rate> -->
+                        <van-rate value="{{shop.rating}}" allow-half></van-rate>
+                        <van-button type="{{shop.isCollect ? 'warning' : 'primary'}}" catch:tap="collect" data-index="{{index}}" data-shop="{{shop}}">
+                            {{shop.isCollect ? "已收藏" : "收藏"}}
+                        </van-button>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</template>

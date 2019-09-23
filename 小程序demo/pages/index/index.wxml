@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+<navigator url="/pages/home/home" open-type="switchTab">
+跳转新页面
+</navigator>
+  <!-- 
+  
+  
+   -->
+</view>

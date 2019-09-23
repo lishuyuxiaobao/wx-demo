@@ -1,0 +1,8 @@
+<!-- components/home-swiper/home-swiper.wxml -->
+<swiper circular="true" indicator-dots="true" autoplay="true" interval="1000" duration="500">
+    <block wx:for="{{swiperData}}">
+        <swiper-item>
+            <view wx:for="{{item}}" wx:for-item="food" wx:key="id">{{food.title}}</view>
+        </swiper-item>
+    </block>
+</swiper>
